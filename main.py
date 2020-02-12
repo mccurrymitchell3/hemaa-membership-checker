@@ -1,14 +1,59 @@
 import requests
+import json
+from requests_oauthlib import OAuth2Session
+from oauthlib.oauth2 import BackendApplicationClient
+from requests.auth import HTTPBasicAuth
+
+# Define variables used for authentication
+client_id = '80521d35b9a15c72b39ea3009e826dca0b2a7f47d7fdb5d31315e8620e478112'
+client_secret = 'ff60bbd4d610b9ece66bfd508112fa453f47eb88673f8f2a10850fb7a206b5c1'
+domain_prefix = 'hemaa'
+username = 'thergautam12@gatech.edu'
+password = 'thisisapassword'
+grant_type = 'password'
+token_url = 'https://accounts.tidyhq.com/oauth/token'
+
+# Store in dictionary to pass as parameters
+data = {
+    'client_id': client_id,
+    'client_secret': client_secret,
+    'domain_prefix': domain_prefix,
+    'username': username,
+    'password': password,
+    'grant_type': grant_type
+}
+
+auth_response = requests.post(token_url, data=data)
+
+# Request access token
+access_token = auth_response.json()['access_token']
+params = {'access_token': access_token}
 
 # This is where we will check membership status.
 
-# Make API call to TidyHQ Contact Method.
-parameters = {
-    "access_token": "ea4ebfc417277907d48d16d361b15a184c1d88513d9d7f3b04475266458eeab7"
-}
-contacts = requests.get("https://api.tidyhq.com/v1/contacts", params=parameters)
-for contact in contacts.json():
-    email = contact['email_address']
-    contactId = contact['id']
-    print(email, contactId)
-    print("NEXT: ")
+contacts = requests.get("https://api.tidyhq.com/v1/contacts", params=params).json()
+
+contact_emails = {contact['email_address']: contact['id'] for contact in contacts}
+
+validation_email = input("Enter email to check: ")
+
+if contact_emails.get(validation_email) is not None:
+    id_num = contact_emails[validation_email]
+    print("ID Number: %d" % id_num)
+    mem_status = requests.get("https://api.tidyhq.com/v1/contacts/" + str(id_num) + "/memberships", params=params)
+    if mem_status.status_code == 200:
+        statuses = mem_status.json()
+        active = False
+        for state in statuses:
+            if state['state'] == 'activated':
+                active = True
+                break
+        if active:
+            print('%s is a member in good standing' % validation_email)
+        else:
+            print('%s is not a member' % validation_email)
+    else:
+        print("Not an active member")
+else:
+    print("Invalid Email")
+
