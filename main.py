@@ -29,22 +29,25 @@ auth_response = requests.post(token_url, data=data)
 access_token = auth_response.json()['access_token']
 params = {'access_token': access_token}
 
-# This is where we will check membership status.
-
+# Pull all contacts from TidyHQ
 contacts = requests.get("https://api.tidyhq.com/v1/contacts", params=params).json()
 
+# Isolate contact emails to match with user input
 contact_emails = {contact['email_address']: contact['id'] for contact in contacts}
-
 validation_email = input("Enter email to check: ")
 
 if contact_emails.get(validation_email) is not None:
+    # Get ID from email
     id_num = contact_emails[validation_email]
     print("ID Number: %d" % id_num)
+
+    # Get member status from TidyHQ
     mem_status = requests.get("https://api.tidyhq.com/v1/contacts/" + str(id_num) + "/memberships", params=params)
     if mem_status.status_code == 200:
         statuses = mem_status.json()
         active = False
         for state in statuses:
+            # Confirm if member is active
             if state['state'] == 'activated':
                 active = True
                 break
