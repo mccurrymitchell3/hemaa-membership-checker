@@ -1,0 +1,53 @@
+.container {
+    padding: 2.5rem 0;
+    height: 10rem;
+    text-align: center;
+    width: 100%;
+    background-color: #EFF0F0;
+
+}
+header img {
+	height: 100%;
+}
+body {
+	line-height: 1;
+    letter-spacing: 1px;
+	margin: 0px;
+}
+
+h1 {
+    font-family: 'Palatino', Times, serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+#loader {
+    position: sticky;
+    top: 70%;
+    left: 47%;
+    z-index: 1;
+
+/*  margin: -75px 0 0 -75px;*/
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#checking {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
