@@ -23,40 +23,37 @@ data = {
     'grant_type': grant_type
 }
 
-auth_response = requests.post(token_url, data=data)
 
-# Request access token
-access_token = auth_response.json()['access_token']
-params = {'access_token': access_token}
+def get_contact_emails():
+    auth_response = requests.post(token_url, data=data)
 
-# Pull all contacts from TidyHQ
-contacts = requests.get("https://api.tidyhq.com/v1/contacts", params=params).json()
+    # Request access token
+    access_token = auth_response.json()['access_token']
+    params = {'access_token': access_token}
 
-# Isolate contact emails to match with user input
-contact_emails = {contact['email_address']: contact['id'] for contact in contacts}
-validation_email = input("Enter email to check: ")
+    # Pull all contacts from TidyHQ
+    contacts = requests.get("https://api.tidyhq.com/v1/contacts", params=params).json()
 
-if contact_emails.get(validation_email) is not None:
-    # Get ID from email
-    id_num = contact_emails[validation_email]
-    print("ID Number: %d" % id_num)
+    # Isolate contact emails to match with user input
+    return {contact['email_address']: contact['id'] for contact in contacts}, params
 
-    # Get member status from TidyHQ
-    mem_status = requests.get("https://api.tidyhq.com/v1/contacts/" + str(id_num) + "/memberships", params=params)
-    if mem_status.status_code == 200:
-        statuses = mem_status.json()
-        active = False
-        for state in statuses:
-            # Confirm if member is active
-            if state['state'] == 'activated':
-                active = True
-                break
-        if active:
-            print('%s is a member in good standing' % validation_email)
+
+def valid_email(email_address):
+    contact_emails, params = get_contact_emails()
+    if contact_emails.get(email_address) is not None:
+        # Get ID from email
+        id_num = contact_emails[email_address]
+
+        # Get member status from TidyHQ
+        mem_status = requests.get("https://api.tidyhq.com/v1/contacts/" + str(id_num) + "/memberships", params=params)
+        if mem_status.status_code == 200:
+            statuses = mem_status.json()
+            for state in statuses:
+                # Confirm if member is active
+                if state['state'] == 'activated':
+                    return True
         else:
-            print('%s is not a member' % validation_email)
+            return False
     else:
-        print("Not an active member")
-else:
-    print("Invalid Email")
+        return False
 
