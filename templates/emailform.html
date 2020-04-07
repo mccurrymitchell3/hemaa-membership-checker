@@ -1,16 +1,30 @@
 {% extends "layout.html"%}
 {% block content %}
-<form method="post" action="">
-    {{ form.hidden_tag() }}
-    <fieldset class="form-group">
-        <div class="form-group">
-            {{ form.email.label(class="form-control-label") }}
-            {{ form.email(class="form-control form-control-lg") }}
+<link rel = "stylesheet" href = "{{ url_for('static', filename='emailform.css') }}"/>
+
+<div class="check">
+    <section class="member_checker">
+        <div id="loading"></div>
+        <div id="form">
+            <h1>Member Checker</h1>
+            <form method="post" action=".">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <div class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {{ form.email(class="form-control form-control-lg") }}
+                </div>
+                <div class="form-group">
+                    {{ form.submit(class="btn", onclick="loading();") }}
+                </div>
+            </fieldset>
+            </form>
+            <div id="message">
+                <p>Please input an email to check on their HEMAA membership status</p>
+            </div>
         </div>
-        <div class="form-group">
-            {{ form.submit(class="btn") }}
-        </div>
-    </fieldset>
-</form>
+
+    </section>
+</div>
 
 {% endblock content %}
