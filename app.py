@@ -8,7 +8,7 @@ app.config['SECRET_KEY'] = '29cb8631d5b4cf1a13f4355798845a93'
 
 @app.route('/', methods=['GET', 'POST'])
 def home_page():
-    form = EmailInput(request.form)
+    form = EmailInput(request.form) 
     if form.validate_on_submit():
         email_address = request.form['email']
         if(valid_email(email_address)):
@@ -26,7 +26,7 @@ def invalid(email):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
 
 
 
