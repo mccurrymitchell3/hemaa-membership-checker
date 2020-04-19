@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30038f27-3caa-42a5-9934-b3881c004b1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_ConfirmationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/HEMAUI_ConfirmationPage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Homepage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Loadpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Loadpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Template.html" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/css/loadpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/css/loadpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HEAM_UI/css/confirmationpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/confirmationpage_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HEAM_UI/css/failpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/failpage_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/failpage_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/homepage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/homepage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HEMAUI_Failpage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HEMAUI_Homepage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HEMAUI_Template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/emailform.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emailform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/flashmessage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/emailform.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/emailform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/invalid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/invalid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/valid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/valid.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,13 +20,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+            <state relative-caret-position="375">
+              <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
               <folding>
-                <element signature="e#0#75#0" expanded="true" />
+                <element signature="e#0#68#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -42,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/valid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="180">
+              <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -51,10 +44,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/invalid.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="210">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/confirmationpage_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -69,8 +76,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/emailform.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-777">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="548">
+              <caret line="102" selection-start-line="102" selection-end-line="102" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/failpage_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="27" selection-start-line="27" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -98,17 +114,20 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/templates/HEMAUI_Homepage.html" />
         <option value="$PROJECT_DIR$/static/layout.css" />
-        <option value="$PROJECT_DIR$/static/emailform.css" />
         <option value="$PROJECT_DIR$/templates/loadpage.html" />
         <option value="$PROJECT_DIR$/static/loadpage.css" />
         <option value="$PROJECT_DIR$/static/homepage_style.css" />
         <option value="$PROJECT_DIR$/templates/emailform.html" />
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/HEAM_UI/css/loadpage_style.css" />
-        <option value="$PROJECT_DIR$/templates/valid.html" />
         <option value="$PROJECT_DIR$/templates/result.html" />
-        <option value="$PROJECT_DIR$/templates/invalid.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/HEAM_UI/css/confirmationpage_style.css" />
+        <option value="$PROJECT_DIR$/static/emailform.css" />
+        <option value="$PROJECT_DIR$/static/failpage_style.css" />
+        <option value="$PROJECT_DIR$/templates/invalid.html" />
+        <option value="$PROJECT_DIR$/templates/valid.html" />
+        <option value="$PROJECT_DIR$/static/confirmationpage_style.css" />
       </list>
     </option>
   </component>
@@ -127,6 +146,17 @@
             <path>
               <item name="hemaa-membership-checker" type="b2602c69:ProjectViewProjectNode" />
               <item name="hemaa-membership-checker" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hemaa-membership-checker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hemaa-membership-checker" type="462c0819:PsiDirectoryNode" />
+              <item name="HEAM_UI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hemaa-membership-checker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hemaa-membership-checker" type="462c0819:PsiDirectoryNode" />
+              <item name="HEAM_UI" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hemaa-membership-checker" type="b2602c69:ProjectViewProjectNode" />
@@ -174,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (app.py) (1)">
+  <component name="RunManager">
     <configuration name="Flask (app.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <option name="flaskDebug" value="true" />
       <module name="hemaa-membership-checker" />
@@ -208,7 +238,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (app.py) (1)" />
         <item itemvalue="Flask server.Flask (app.py)" />
       </list>
     </recent_temporary>
@@ -228,23 +257,24 @@
       <workItem from="1585937917834" duration="1112000" />
       <workItem from="1586046848651" duration="4877000" />
       <workItem from="1586149343100" duration="4111000" />
-      <workItem from="1586217345577" duration="4516000" />
+      <workItem from="1586217345577" duration="5063000" />
+      <workItem from="1587330827730" duration="4385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29863000" />
+    <option name="totallyTimeSpent" value="34795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37831324" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13855422" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46024096" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -253,7 +283,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.22048193" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23975904" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -278,16 +308,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/hemaa_membership_checker$Flask__app_py___1_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1586281064896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/hemaa_membership_checker$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1586060436470" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/hemaa_membership_checker$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1587335749864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/flashmessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/flashmessage.html" />
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/werkzeug/debug/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -295,20 +319,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/HEMAUI_Failpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="95" selection-start-line="10" selection-start-column="95" selection-end-line="10" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/HEMAUI_Template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="106" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/HEMAUI_Failpage.html" />
+    <entry file="file://$PROJECT_DIR$/templates/HEMAUI_Template.html" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -319,23 +331,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style_template.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HEAM_UI/css/confirmationpage_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/HEMAUI_Homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="31" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/static/style_template.css" />
+    <entry file="file://$PROJECT_DIR$/templates/HEMAUI_Homepage.html" />
     <entry file="file://$PROJECT_DIR$/static/layout.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -395,20 +392,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="373" selection-start-line="373" selection-end-line="373" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/emailform.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
@@ -433,10 +420,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/invalid.html">
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="120">
+          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -447,27 +444,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/static/emailform.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+        <state relative-caret-position="548">
+          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/invalid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/valid.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="180">
+          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/static/failpage_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#75#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="115">
+          <caret line="27" selection-start-line="27" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/confirmationpage_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
     </entry>

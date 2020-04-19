@@ -14,6 +14,7 @@ def home_page():
         if(valid_email(email_address)):
             return redirect(url_for('valid', email=email_address))
         return redirect(url_for('invalid', email=email_address))
+
     return render_template('%s.html' % "emailform", form=form)
 
 @app.route('/valid<email>')
@@ -23,7 +24,6 @@ def valid(email):
 @app.route('/invalid<email>')
 def invalid(email):
     return render_template('%s.html' % 'invalid', email=email)
-
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,6 +1,6 @@
 {% extends "layout.html"%}
 {% block content %}
-<link rel = "stylesheet" href = "{{ url_for('static', filename='emailform.css') }}"/>
+<link rel = "stylesheet" href = "{{ url_for('static', filename='confirmationpage_style.css') }}"/>
 
 <div class="result">
 	<section class="member_checker">
@@ -10,7 +10,7 @@
                         <p>{{ email }} is currently a HEMA Alliance member</p>
 					</div>
 
-                    <input type="submit" value="go back"> <!--go back to main page button -->
+                    <a href="/"><input type="button" value="Go Back" id="button1"></a> <!--go back to main page button -->
                 </div>
 
     </section> <!-- member_checker -->
