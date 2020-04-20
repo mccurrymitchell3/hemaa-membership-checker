@@ -1,0 +1,22 @@
+{% extends "layout.html"%}
+{% block content %}
+<link rel = "stylesheet" href = "{{ url_for('static', filename='failpage_style.css') }}"/>
+
+<div class="result">
+	<section class="member_checker">
+            <h1>Membership Checker</h1>
+                <div id="output_container">
+                    <div id="email_output">
+                        <p>{{ email }} is currently not a HEMA Alliance member</p>
+					</div>
+                    <div id="buttons">
+                        <a href="/"><input type="button" value="Go Back" id="button1"></a>
+                        <a href="https://www.hemaalliance.com/memberships"><input type="button" value="Become a Member" id="button2"></a>
+                    </div>
+                </div>
+
+    </section> <!-- member_checker -->
+
+</div>
+
+{% endblock content %}
