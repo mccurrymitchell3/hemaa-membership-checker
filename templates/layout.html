@@ -1,4 +1,4 @@
-
+<!-- hello -->
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
@@ -6,19 +6,23 @@
     <title>HEMA Alliance</title>
     <link rel="shortcut icon" href="#">
     <link rel = "stylesheet" href = "{{ url_for('static', filename='layout.css') }}"/>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
 </head>
 
 <header class="container" >
 	<a href="https://www.hemaalliance.com/"><img class="resize_fit_center" src="{{ url_for('static', filename='logo.png') }}" ></img>
 	</a>
+    
 </header>
 {% block content %}{% endblock %}
 </html>
-
+<!-- loading -->
 <script type="text/javascript">
     function loading() {
-        $("#loading").show();
+        document.querySelector("#loader").style.visibility = "visible"; 
+        document.querySelector("#the_check").style.visibility = "visible"; 
         $("#form").hide();
     }
 </script>
