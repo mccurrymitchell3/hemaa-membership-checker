@@ -1,10 +1,11 @@
+<!-- Test -->
 {% extends "layout.html"%}
 {% block content %}
 <link rel = "stylesheet" href = "{{ url_for('static', filename='emailform.css') }}"/>
 
 <div class="check">
     <section class="member_checker">
-        <div id="loading"></div>
+
         <div id="form">
             <h1>Member Checker</h1>
             <form method="post" action=".">
@@ -23,6 +24,9 @@
                 <p>Please input an email to check on their HEMAA membership status</p>
             </div>
         </div>
+        <div id="the_check"><h1>Checking</h1></div>
+        <div id="loader"></div>
+       
 
     </section>
 </div>
