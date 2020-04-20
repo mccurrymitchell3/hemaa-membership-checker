@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="30038f27-3caa-42a5-9934-b3881c004b1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_ConfirmationPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/HEMAUI_ConfirmationPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/css/confirmationpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/confirmationpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HEAM_UI/css/failpage_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/failpage_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/emailform.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/emailform.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/invalid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/invalid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/valid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/valid.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +45,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/confirmationpage_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
+            <state relative-caret-position="765">
               <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
             </state>
           </provider>
@@ -258,23 +250,22 @@
       <workItem from="1586046848651" duration="4877000" />
       <workItem from="1586149343100" duration="4111000" />
       <workItem from="1586217345577" duration="5063000" />
-      <workItem from="1587330827730" duration="4385000" />
+      <workItem from="1587330827730" duration="5092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34795000" />
+    <option name="totallyTimeSpent" value="35502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13855422" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4807229" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46024096" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -283,7 +274,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23975904" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.20120482" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -454,13 +445,6 @@
     <entry file="file://$PROJECT_DIR$/HEAM_UI/HEMAUI_Failpage.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/invalid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/valid.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -475,9 +459,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/invalid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/static/confirmationpage_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
+        <state relative-caret-position="765">
           <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
         </state>
       </provider>
