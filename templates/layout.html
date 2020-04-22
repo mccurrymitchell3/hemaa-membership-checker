@@ -14,15 +14,24 @@
 <header class="container" >
 	<a href="https://www.hemaalliance.com/"><img class="resize_fit_center" src="{{ url_for('static', filename='logo.png') }}" ></img>
 	</a>
-    
+
 </header>
 {% block content %}{% endblock %}
 </html>
 <!-- loading -->
 <script type="text/javascript">
-    function loading() {
-        document.querySelector("#loader").style.visibility = "visible"; 
-        document.querySelector("#the_check").style.visibility = "visible"; 
-        $("#form").hide();
+    loading = function() {
+        var validate = true;
+        $('input:required').each(function(){
+            if($(this).val().trim() === ''){
+                validate = false;
+            }
+        });
+        if (validate) {
+            document.querySelector("#loader").style.visibility = "visible";
+            document.querySelector("#the_check").style.visibility = "visible";
+            $("#form").hide();
+        }
+
     }
 </script>

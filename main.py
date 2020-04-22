@@ -24,7 +24,7 @@ data = {
 }
 
 
-def get_contact_emails():
+def get_contact_emails(email):
     auth_response = requests.post(token_url, data=data)
 
     # Request access token
@@ -34,26 +34,28 @@ def get_contact_emails():
     # Pull all contacts from TidyHQ
     contacts = requests.get("https://api.tidyhq.com/v1/contacts", params=params).json()
 
-    # Isolate contact emails to match with user input
-    return {contact['email_address']: contact['id'] for contact in contacts}, params
+    id_nums = [contact['id'] for contact in contacts if contact['email_address'] == email]
+
+    return id_nums, params
 
 
 def valid_email(email_address):
-    contact_emails, params = get_contact_emails()
-    if contact_emails.get(email_address) is not None:
-        # Get ID from email
-        id_num = contact_emails[email_address]
+    id_nums, params = get_contact_emails(email_address)
+    if len(id_nums) > 0:
+        for id in id_nums:
+            # Get member status from TidyHQ
+            mem_status = requests.get("https://api.tidyhq.com/v1/contacts/" + str(id) + "/memberships",
+                                      params=params)
 
-        # Get member status from TidyHQ
-        mem_status = requests.get("https://api.tidyhq.com/v1/contacts/" + str(id_num) + "/memberships", params=params)
-        if mem_status.status_code == 200:
-            statuses = mem_status.json()
-            for state in statuses:
-                # Confirm if member is active
-                if state['state'] == 'activated':
-                    return True
-        else:
-            return False
+            if mem_status.status_code == 200:
+                statuses = mem_status.json()
+                for state in statuses:
+                    # Confirm if member is active
+                    if state['state'] == 'activated':
+                        return True
+            else:
+                return False
+
     else:
         return False
 
